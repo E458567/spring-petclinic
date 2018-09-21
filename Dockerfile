@@ -1,2 +1,3 @@
 FROM openjdk:8-jdk-alpine
-ADD . /resource-sample-app
+RUN pwd
+ADD . updated-sample-app
