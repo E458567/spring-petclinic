@@ -1,3 +1,2 @@
-FROM openjdk:8-jdk-alpine
-RUN pwd
+FROM myautopoc/8-jdk-alpine-git
 ADD . updated-sample-app
