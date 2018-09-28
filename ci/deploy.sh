@@ -2,6 +2,9 @@
 
 set -e -x
 
+echo $PWD
+ls -l
+
 aws ec2 run-instances \
 --image-id ami-03651d073314feb69 \
 --count 1 \
@@ -10,7 +13,7 @@ aws ec2 run-instances \
 --security-group-ids sg-0514c8c6bc2536f7a \
 --subnet-id subnet-4ad2582f \
 --associate-public-ip-address \
---user-data file://$PWD/bootstrap.txt
+--user-data file://bootstrap.txt
 
 public_ip=""
 
