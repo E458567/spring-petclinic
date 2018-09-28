@@ -27,4 +27,4 @@ until curl -m 5 "$url"; do
     echo "Retry again in next 5 seconds until Docker container is serving sample app on port 8090 ..."
 done
 
-echo "Docker container for sample app is fully up running. It's ready to fire some Selenium tests."
+echo "Docker container for sample app is fully up running: $url and ready for Selenium tests"
