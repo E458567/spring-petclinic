@@ -3,7 +3,9 @@
 set -e -x
 
 echo $PWD
-cd $(dirname '$0')
+current_dir=dirname $0
+cd current_dir
+ls -l
 
 aws ec2 run-instances \
 --image-id ami-03651d073314feb69 \
