@@ -1,11 +1,7 @@
 #!/bin/bash
 
 set -e -x
-
-echo $PWD
-current_dir=dirname $0
-cd current_dir
-ls -l
+pwd
 
 aws ec2 run-instances \
 --image-id ami-03651d073314feb69 \
