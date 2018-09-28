@@ -3,7 +3,7 @@
 set -e -x
 
 echo $PWD
-ls -l
+cd $(dirname '$0')
 
 aws ec2 run-instances \
 --image-id ami-03651d073314feb69 \
