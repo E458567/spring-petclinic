@@ -10,7 +10,7 @@ aws ec2 run-instances \
 --security-group-ids sg-0514c8c6bc2536f7a \
 --subnet-id subnet-4ad2582f \
 --associate-public-ip-address \
---user-data file://bootstrap.txt
+--user-data file://$PWD/bootstrap.txt
 
 public_ip=""
 
