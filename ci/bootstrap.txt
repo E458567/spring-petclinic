@@ -1,0 +1,4 @@
+#!/bin/bash
+
+set -e -x
+sudo docker run -p 8090:8090 myautopoc/spring-petclinic
