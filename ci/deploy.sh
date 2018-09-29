@@ -29,4 +29,4 @@ until curl -m 5 "$url"; do
 done
 
 echo "Docker container for sample app is fully up running: $url and ready for Selenium tests"
-echo "SAMPLE_APP_URL=$url" > output-dir/deployment-info.conf
+echo "SAMPLE_APP_URL=$url" > ../../output-dir/deployment-info.conf
